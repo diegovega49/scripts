@@ -16,6 +16,7 @@ if ($currTime.TimeOfDay -ge $firstProblem.strtTaskTime.TimeOfDay -and $currTime.
     # filter page by easy problems
     start-process chrome.exe "--new-window https://leetcode.com/problemset/algorithms/?difficulty=EASY&page=1"
 }
-else {
-    "err"
+
+if ($currTime.TimeOfDay -ge $secondProblem.strtTaskTime.TimeOfDay -and $currTime.TimeOfDay -le $secondProblem.endTaskTime.TimeOfDay) {
+    start-process chrome.exe "--new-window https://leetcode.com/problemset/algorithms/?difficulty=EASY&page=1"
 }
