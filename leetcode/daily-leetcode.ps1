@@ -1,4 +1,5 @@
-# basic script for opening a leetcode problem page within set time intervals 
+# Basic ps script for opening a leetcode page within set time intervals 
+# Leetcode has a button for generating a random problem page. Might look into Selenium for this
 
 $firstProblem = [PSCustomObject]@{
     strtTaskTime = Get-Date '11:00'
